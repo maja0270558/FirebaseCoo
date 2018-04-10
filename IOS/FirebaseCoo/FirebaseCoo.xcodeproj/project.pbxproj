@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C64243DF6916B9421C3CF869 /* Pods_FirebaseCoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C2A4D4B4891633FD5BD3E2 /* Pods_FirebaseCoo.framework */; };
+		EB31BDC8207C58D100E523CF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31BDC7207C58D100E523CF /* RegisterViewController.swift */; };
+		EB31BDCA207C58DF00E523CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB31BDC9207C58DF00E523CF /* LoginViewController.swift */; };
 		EBBC2FF6207C4D780047F6CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC2FF5207C4D780047F6CE /* AppDelegate.swift */; };
 		EBBC2FF8207C4D780047F6CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC2FF7207C4D780047F6CE /* ViewController.swift */; };
 		EBBC2FFB207C4D780047F6CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBC2FF9207C4D780047F6CE /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		3C8968DE0AC376B6A02C0429 /* Pods-FirebaseCoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseCoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseCoo/Pods-FirebaseCoo.debug.xcconfig"; sourceTree = "<group>"; };
 		642E3DFC8EA2F772947BDF3A /* Pods-FirebaseCoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseCoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseCoo/Pods-FirebaseCoo.release.xcconfig"; sourceTree = "<group>"; };
 		69C2A4D4B4891633FD5BD3E2 /* Pods_FirebaseCoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseCoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB31BDC7207C58D100E523CF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EB31BDC9207C58DF00E523CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBBC2FF2207C4D780047F6CE /* FirebaseCoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseCoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBC2FF5207C4D780047F6CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBC2FF7207C4D780047F6CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 			children = (
 				EBBC2FF5207C4D780047F6CE /* AppDelegate.swift */,
 				EBBC2FF7207C4D780047F6CE /* ViewController.swift */,
+				EB31BDC7207C58D100E523CF /* RegisterViewController.swift */,
+				EB31BDC9207C58DF00E523CF /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB31BDCA207C58DF00E523CF /* LoginViewController.swift in Sources */,
+				EB31BDC8207C58D100E523CF /* RegisterViewController.swift in Sources */,
 				EBBC2FF8207C4D780047F6CE /* ViewController.swift in Sources */,
 				EBBC2FF6207C4D780047F6CE /* AppDelegate.swift in Sources */,
 			);
@@ -416,7 +424,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CY3RX8F76;
 				INFOPLIST_FILE = "$(SRCROOT)/FirebaseCoo/Support/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DjangoCode.FirebaseCoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -432,7 +443,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CY3RX8F76;
 				INFOPLIST_FILE = "$(SRCROOT)/FirebaseCoo/Support/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DjangoCode.FirebaseCoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
