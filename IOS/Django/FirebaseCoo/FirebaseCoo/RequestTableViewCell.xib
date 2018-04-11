@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="93" id="KGk-i7-Jjw" customClass="RequestTableViewCell" customModule="FirebaseCoo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kvG-vC-LZ5">
+                        <rect key="frame" x="267" y="11" width="30" height="71"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqt-4I-Gfw">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="41"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ok:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1p8-BJ-kV8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwW-HZ-SBt">
+                                <rect key="frame" x="0.0" y="41" width="30" height="30"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="no:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dTH-JU-FPg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="aUE-9b-3NB"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y75-eA-9EV">
+                        <rect key="frame" x="9" y="36" width="248" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NBp-3d-hJd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="kvG-vC-LZ5" secondAttribute="trailing" id="7en-hM-8A7"/>
+                    <constraint firstAttribute="bottom" secondItem="Y75-eA-9EV" secondAttribute="bottom" constant="35.5" id="LjW-yM-Quy"/>
+                    <constraint firstItem="kvG-vC-LZ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MQc-fu-5ti"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kvG-vC-LZ5" secondAttribute="bottom" id="U0R-el-VZD"/>
+                    <constraint firstItem="Y75-eA-9EV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="d2q-IB-6kF"/>
+                    <constraint firstItem="kvG-vC-LZ5" firstAttribute="leading" secondItem="Y75-eA-9EV" secondAttribute="trailing" constant="10" id="fkA-cW-YyU"/>
+                    <constraint firstItem="Y75-eA-9EV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="iwG-IX-Qha"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="name" destination="Y75-eA-9EV" id="dYn-Nd-5rR"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="104.5"/>
+        </tableViewCell>
+    </objects>
+</document>

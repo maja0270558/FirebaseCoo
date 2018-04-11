@@ -7,8 +7,8 @@ target 'FirebaseCoo' do
 
   # Pods for FirebaseCoo
 
-pod 'Firebase'
-pod 'Firebase/Auth'
-pod 'Firebase/Database'
+pod ‘Firebase/Database’
+pod ‘Firebase/Auth’
+pod ‘Firebase/Storage’
 
 end
